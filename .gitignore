@@ -1,0 +1,21 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+MQTT-test.cert.pem
+MQTT-test.private.key
+MQTT-test.public.key
+root-CA.crt
+connect_device_package.zip
+start.sh

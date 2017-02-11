@@ -1,0 +1,24 @@
+{
+  "name": "mqtt-test",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.14",
+    "aws-sdk": "^2.12.0",
+    "aws-signature-v4": "^1.0.1",
+    "crypto": "0.0.3",
+    "mqtt": "^2.3.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "websocket-stream": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
