@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import v4 from 'aws-signature-v4';
-import crypto from 'crypto';
 import MqttClient from '../node_modules/mqtt/lib/client';
 import websocket from 'websocket-stream';
 import AWS from 'aws-sdk'
@@ -10,7 +8,6 @@ import AWS from 'aws-sdk'
 const AWS_ACCESS_KEY = process.env.REACT_APP_AWS_KEY
 const AWS_SECRET_ACCESS_KEY = process.env.REACT_APP_AWS_SECRET
 const AWS_IOT_ENDPOINT_HOST = 'a1kizql268uj4x.iot.ap-southeast-1.amazonaws.com'
-const MQTT_TOPIC = '/test/iot-pubsub-demo';
 
 /**
   * utilities to do sigv4
@@ -71,7 +68,7 @@ let client = new MqttClient(() => {
 class App extends Component {
 
   publish(e) {
-    e.preventDefault
+    e.preventDefault()
     client.publish('testTopic', 'Hello World')
   }
 
