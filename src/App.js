@@ -7,7 +7,8 @@ import AWS from 'aws-sdk'
 
 const AWS_ACCESS_KEY = process.env.REACT_APP_AWS_KEY
 const AWS_SECRET_ACCESS_KEY = process.env.REACT_APP_AWS_SECRET
-const AWS_IOT_ENDPOINT_HOST = 'a1kizql268uj4x.iot.ap-southeast-1.amazonaws.com'
+const AWS_IOT_ENDPOINT_HOST = process.env.REACT_APP_AWS_IOT_ENDPOINT
+// a1kizql268uj4x.iot.ap-southeast-1.amazonaws.com
 
 /**
   * utilities to do sigv4
